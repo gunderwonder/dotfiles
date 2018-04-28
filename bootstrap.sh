@@ -20,6 +20,7 @@ brew cask install 1password
 brew cask install dropbox
 brew cask install telegram-desktop
 brew cask install istat-menus
+brew cask install hazel
 
 brew cask install atom
 apm install sync-settings
