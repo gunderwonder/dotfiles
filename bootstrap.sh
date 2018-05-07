@@ -1,9 +1,13 @@
+#!/usr/bin/env bash
+
 brew install fish
 curl -L https://get.oh-my.fish > install
 fish install --path=~/.local/share/omf --config=~/.dotfiles/omf/
 
-brew install node
+brew install mas
+brew install jq
 
+brew install node
 npm install -g http-server
 npm install -g eslint
 
@@ -21,6 +25,9 @@ brew cask install dropbox
 brew cask install telegram-desktop
 brew cask install istat-menus
 brew cask install hazel
+brew cask install transmit
+brew cask install dash
+
 
 brew cask install atom
 apm install sync-settings
