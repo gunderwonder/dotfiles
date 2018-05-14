@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+ln -s $(pwd)/.gitconfig ~/
+ln -s $(pwd)/.editorconfig ~/
+
 brew install fish
 curl -L https://get.oh-my.fish > install
-fish install --path=~/.local/share/omf --config=~/.dotfiles/omf/
+fish install --path=~/.local/share/omf --config=$(pwd)/omf/
 
 brew install mas
 brew install jq
