@@ -1,7 +1,6 @@
 [user]
 	name = Øystein Riiser Gundersen
 	email = oysteinrg@gmail.com
-
 [alias]
 	co = checkout
 	ci = commit
@@ -12,7 +11,9 @@
 	excludesfile = /Users/n23129/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[credential]
+	helper = osxkeychain

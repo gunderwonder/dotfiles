@@ -27,7 +27,11 @@ brew cask install istat-menus
 brew cask install hazel
 brew cask install transmit
 brew cask install dash
+brew cask install paw
+brew cask install tad
 
+# https://github.com/sindresorhus/quick-look-pluginsx
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
 
 brew cask install atom
 apm install sync-settings
