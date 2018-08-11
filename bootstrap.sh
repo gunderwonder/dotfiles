@@ -2,6 +2,7 @@
 
 ln -s $(pwd)/.gitconfig ~/
 ln -s $(pwd)/.editorconfig ~/
+ln -s $(pwd)/ssh/config ~/.ssh/config
 
 brew install fish
 curl -L https://get.oh-my.fish > install

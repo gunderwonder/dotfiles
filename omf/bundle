@@ -1,5 +1,6 @@
 package brew
 package https://github.com/oh-my-fish/plugin-cask
+package hub
 package osx
 package sublime
 theme agnoster
