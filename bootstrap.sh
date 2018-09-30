@@ -17,25 +17,26 @@ npm install -g eslint
 
 brew tap caskroom/cask
 
-brew cask install sourcetree
-brew cask install controllermate
-brew cask install devonthink-pro
-brew cask install google-chrome
-brew cask install docker
-brew cask install iterm2
-brew cask install spotify
-brew cask install 1password
-brew cask install dropbox
-brew cask install telegram-desktop
-brew cask install istat-menus
-brew cask install hazel
-brew cask install transmit
-brew cask install dash
-brew cask install paw
-brew cask install tad
+brew cask install sourcetree \
+	iterm2 \
+	controllermate \
+	hazel \
+	devonthink-pro \
+	google-chrome \
+	istat-menus \
+	spotify \
+	1password \
+	dropbox
+
+brew cask install docker \
+	telegram-desktop \
+	transmit \
+	dash \
+	paw \
+	tad
 
 # https://github.com/sindresorhus/quick-look-pluginsx
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
+# brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
 
 brew cask install atom
 apm install sync-settings
