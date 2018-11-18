@@ -26,7 +26,8 @@ brew cask install sourcetree \
 	istat-menus \
 	spotify \
 	1password \
-	dropbox
+	dropbox \
+	aerial
 
 brew cask install docker \
 	telegram-desktop \
@@ -46,3 +47,5 @@ brew install zeromq
 sudo python3 -m pip install jupyter
 npm install -g ijavascript
 ijsinstall
+
+# curl https://github.com/martinfinke/xcall/releases/download/v1.0.1/xcall.app.zip
