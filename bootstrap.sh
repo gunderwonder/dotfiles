@@ -43,6 +43,16 @@ apm install sync-settings
 
 brew install python3
 brew install zeromq
+
 sudo python3 -m pip install jupyter
+sudo -H pip3 install \
+	nltk \
+	elasticsearch \
+	pandas \
+	matplotlib \
+	gspread \
+	oauth2client \
+	df2gspread
+
 npm install -g ijavascript
 ijsinstall
