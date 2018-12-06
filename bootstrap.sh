@@ -53,7 +53,8 @@ sudo -H pip3 install \
 	matplotlib \
 	gspread \
 	oauth2client \
-	df2gspread
+	df2gspread \
+	spicy
 
 npm install -g ijavascript
 ijsinstall
