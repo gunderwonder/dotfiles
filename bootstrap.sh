@@ -12,8 +12,9 @@ brew install mas
 brew install jq
 
 brew install node
-npm install -g http-server
-npm install -g eslint
+npm install -g http-server \
+	 eslint \
+	 yarn
 
 brew tap caskroom/cask
 
