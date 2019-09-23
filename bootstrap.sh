@@ -4,6 +4,10 @@ ln -s $(pwd)/.gitconfig ~/
 ln -s $(pwd)/.editorconfig ~/
 ln -s $(pwd)/ssh/config ~/.ssh/config
 
+ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Filer ~/
+ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Papirløst ~/
+ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Assets ~/
+
 brew install fish
 curl -L https://get.oh-my.fish > install
 fish install --path=~/.local/share/omf --config=$(pwd)/omf/
@@ -27,14 +31,15 @@ brew cask install sourcetree \
 	spotify \
 	1password \
 	dropbox \
-	aerial
-
-brew cask install docker \
+	aerial \
+	keyboard-maestro \
+	docker \
 	telegram-desktop \
 	transmit \
 	dash \
 	paw \
-	tad
+	tad \
+	soundcontrol
 
 # https://github.com/sindresorhus/quick-look-pluginsx
 # brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
