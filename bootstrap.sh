@@ -37,7 +37,6 @@ brew cask install iterm2 \
 	dropbox \
 	aerial \
 	keyboard-maestro \
-	docker \
 	transmit \
 	dash \
 	paw \
