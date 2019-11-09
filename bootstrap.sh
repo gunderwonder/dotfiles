@@ -3,30 +3,31 @@
 ln -s $(pwd)/.gitconfig ~/
 ln -s $(pwd)/.editorconfig ~/
 ln -s $(pwd)/ssh/config ~/.ssh/config
+ln -s $(pwd)/jupyter ~/.jupyter
 
 ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Filer ~/
 ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Papirløst ~/
 ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Assets ~/
 
-brew install fish
-curl -L https://get.oh-my.fish > install
-fish install --path=~/.local/share/omf --config=$(pwd)/omf/
+brew install hub fish
+curl -L https://get.oh-my.fish > fish_install
+fish fish_install --path=~/.local/share/omf --config=$(pwd)/omf/
+rm install
 
 brew install mas
 brew install jq
 
 brew install node
-npm install -g http-server
-npm install -g eslint
+npm install -g http-server \
+	eslint
 
-brew tap caskroom/cask
-
-brew cask install sourcetree \
-	iterm2 \
+brew cask install iterm2 \
 	controllermate \
 	hazel \
-	devonthink-pro \
+	devonthink \
+	soundsource \
 	google-chrome \
+	google-backup-and-sync \
 	istat-menus \
 	spotify \
 	1password \
@@ -34,12 +35,11 @@ brew cask install sourcetree \
 	aerial \
 	keyboard-maestro \
 	docker \
-	telegram-desktop \
 	transmit \
 	dash \
 	paw \
 	tad \
-	soundcontrol
+	sourcetree
 
 # https://github.com/sindresorhus/quick-look-pluginsx
 # brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
@@ -48,12 +48,9 @@ brew cask install atom
 apm install sync-settings
 
 brew install python3
-brew install zeromq
+brew install jupyter
 
-sudo python3 -m pip install jupyter
-sudo -H pip3 install \
-	nltk \
-	elasticsearch \
+pip3 install elasticsearch \
 	pandas \
 	matplotlib \
 	gspread \
@@ -63,5 +60,9 @@ sudo -H pip3 install \
 
 npm install -g ijavascript
 ijsinstall
+
+brew cask install nteract
+pip3 install ipykernel
+python3 -m ipykernel install
 
 # curl https://github.com/martinfinke/xcall/releases/download/v1.0.1/xcall.app.zip
