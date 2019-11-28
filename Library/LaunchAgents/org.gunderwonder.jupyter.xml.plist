@@ -7,14 +7,20 @@
         <key>KeepAlive</key>
         <false/>
         <key>Label</key>
-        <string>org.gunderwonder.jupyter.xml.plist</string>
+        <string>org.gunderwonder.jupyter</string>
         <key>ProgramArguments</key>
         <array>
             <string>/usr/local/bin/jupyter</string>
             <string>notebook</string>
             <string>--no-browser</string>
 			<string>--port</string>
-			<string>3333</string>
+			<string>4000</string>
         </array>
+		<key>StandardErrorPath</key>
+    	<string>/Users/gunderwonder/Library/Logs/jupyter-notebook-error.log</string>
+    	<key>StandardOutPath</key>
+    	<string>/Users/gunderwonder/Library/Logs/jupyter-notebook.log</string>
+    	<key>WorkingDirectory</key>
+    	<string>/Users/gunderwonder/Filer</string>
     </dict>
 </plist>
