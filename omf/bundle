@@ -4,4 +4,5 @@ package hub
 package osx
 package sublime
 theme agnoster
+theme bobthefish
 theme default
