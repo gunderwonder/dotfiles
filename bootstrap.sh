@@ -16,12 +16,13 @@ ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Prosjekter ~/
 # utviklerverktøy
 brew install node
 npm install -g http-server \
-	 eslint \
-	 yarn
+	eslint \
+	yarn
 brew install jq
 
 brew install python3
 brew install jupyter
+brew install dash
 
 brew install visual-studio-code
 # sync: github
@@ -52,6 +53,8 @@ brew install karabiner-elements
 brew install hazel # sync: dropbox
 brew install google-drive-file-stream
 brew install homebrew/cask/onedrive
+brew install mas
+brew install switchresx
 
 # apps
 brew install aerial
@@ -61,6 +64,12 @@ brew install soundsource
 brew install 1password # sync: 1password
 brew install soundsource
 brew install raindropio
+brew install netnewsire
+brew install parallels
+brew install microsoft-teams
+brew install firefox
+brew install google-chrome
+brew install airbuddy
 
 # https://github.com/sindresorhus/quick-look-pluginsx
 # brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
@@ -76,8 +85,10 @@ pip3 install elasticsearch \
 npm install -g ijavascript
 ijsinstall
 
-brew cask install nteract
 pip3 install ipykernel
 python3 -m ipykernel install
 
 # curl https://github.com/martinfinke/xcall/releases/download/v1.0.1/xcall.app.zip
+
+defaults write com.apple.screencapture location /Users/gunderwonder/Dropbox/Screenshots
+killall SystemUIServer

@@ -1,6 +1,14 @@
+Host homepage
+   HostName homepage
+   User root
+
+Host ssh.bleikoya.net
+   HostName ssh.bleikoya.net
+   User bleikoya.net
+
 Host *
    AddKeysToAgent yes
    UseKeychain yes
-   IdentityFile ~/.ssh/id_rsa
+   IdentityFile ~/.ssh/id_ed25519
 
 PubkeyAuthentication yes
